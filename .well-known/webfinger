@@ -1,0 +1,24 @@
+{
+  "subject": "acct:chaluha@witter.cz",
+  "aliases": [
+    "https://witter.cz/@chaluha",
+    "https://witter.cz/users/chaluha"
+  ],
+  "links": [
+     {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://witter.cz/@chaluha"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://witter.cz/users/chaluha"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://witter.cz/authorize_interaction?uri={uri}"
+    }
+  ]
+}
+
