@@ -673,7 +673,7 @@ progress {
     max-width: 1320px;
   }
 }
-.row {
+.row, .toots {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -1281,7 +1281,7 @@ progress {
     flex: 0 0 auto;
     width: 16.66666667%;
   }
-  .col-lg-3 {
+  .col-lg-3, .toot {
     flex: 0 0 auto;
     width: 25%;
   }
@@ -8085,7 +8085,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-white, .text-white a {
+.text-white, .text-white a, .toot .permalink, .toot .user {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
@@ -11064,4 +11064,32 @@ html {
 
 .hover-overlay:hover:before {
   height: 100%;
+}
+
+.toot {
+  list-style-type: none;
+  font-size: larger;
+}
+
+.toot .user, .toot .permalink {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.toot .avatar, .toot .display-name {
+  display: none;
+}
+
+.toot > a, .toot > div {
+  display: block;
+}
+
+.toot img {
+  max-width: 90%;
+  max-height: 8em;
+}
+
+.toot > * {
+  margin: 0ex 1ex;
+  padding: 0ex 1ex;
 }
