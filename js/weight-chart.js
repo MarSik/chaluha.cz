@@ -1,9 +1,13 @@
 $(document).ready(function() {
   const table = $("#weight");
   const chartData = {
-        labels: ["0", "1", "2", "3"],
+        labels: [],
         datasets: []
     };
+
+  chartData.labels = table.find('thead tr').first().find('th').slice(1).map(function() {
+     return $(this).text().trim(); 
+  });
 
   table.find('tr').slice(1).each(function() {
         const $cells = $(this).find('td');
