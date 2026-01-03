@@ -50,6 +50,10 @@ $(document).ready(function() {
         type: 'line', // or 'line', etc.
         data: chartData,
         options: {
+            interaction: {
+                intersect: false,
+                mode: 'index',
+            },
             responsive: true,
             scales: {
                 y: {
