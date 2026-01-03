@@ -188,8 +188,17 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
+            <div class="chart-data container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Jak rosteme</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-clock"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="chart-data row justify-content-center">
                     <table class="" id="weight">
                     <thead>
                     <tr>
@@ -286,7 +295,41 @@
                     </tr>
                     </tbody>
                     </table>
-                    <canvas style="display: none; height: 3cm;" id="weight-chart"></canvas>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                </div>
+            </div>
+                <!-- Portfolio Grid Items-->
+            <div class="chart-data container justify-content-center">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Významné události</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-clock"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="chart-data row justify-content-center">
+                    <table id="events" class="">
+                    <tr>
+                        <td>12</td>
+                        <td>koukáme na svět</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>odčervení</td>
+                    </tr>
+                    </table>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                </div>
+            </div>
+                <!-- Portfolio Grid Items-->
+            <div class="chart-view container">
+                <canvas style="height: 3cm; display: none;" id="weight-chart"></canvas>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
                 </div>
             </div>
         </section>
@@ -532,6 +575,7 @@
         <script type="module" src="https://esm.sh/emfed@1"></script>
         <!-- chart.js -->
         <script src="js/chart.umd.min.js"></script>
+        <script src="js/chartjs-plugin-annotation.min.js"></script>
         <script src="js/jquery-3.7.1.slim.min.js"></script>
         <script src="js/weight-chart.js"></script>
     </body>

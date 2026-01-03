@@ -1,12 +1,39 @@
 $(document).ready(function() {
   const table = $("#weight");
+  const events = $("#events");
+  
   const chartData = {
         labels: [],
         datasets: []
     };
 
-  chartData.labels = table.find('thead tr').first().find('th').slice(1).map(function() {
-     return $(this).text().trim(); 
+  const annotations = {
+  };
+
+  events.find('tr').each(function () {
+      const $cells = $(this).find('td');
+      const $day = $cells.first().text().trim();
+
+      annotations["day" + $day] = {
+          type: 'line',
+          scaleID: 'x',
+          borderWidth: 1,
+          borderColor: 'black',
+          value: $day,
+          label: {
+            // rotation: 'auto',
+            position: 'end',
+            backgroundColor: 'black',
+            content: $cells.slice(1).first().text().trim(),
+            display: true
+          },
+      };
+  });
+
+console.log("annotations", annotations);
+
+  table.find('thead tr').first().find('th').slice(1).each(function() {
+      chartData.labels.push($(this).text().trim());
   });
 
   table.find('tr').slice(1).each(function() {
@@ -22,16 +49,6 @@ $(document).ready(function() {
         }).get();
 
         const datasetColor = $(this).attr("data-color");
-
-        // if (datasetLabel == "Jahoda") {
-        //   datasetColor = "#ff1010";
-        // } else if (datasetLabel == "Jarisch") {
-        //   datasetColor = "#10f7ff";
-        // } else if (datasetLabel == "Jód") {
-        //   datasetColor = "#ff9810";
-        // } else if (datasetLabel == "Jitrocel") {
-        //   datasetColor = "#00b312";
-        // }
 
         // Add dataset to chart data
         chartData.datasets.push({
@@ -50,6 +67,11 @@ $(document).ready(function() {
         type: 'line', // or 'line', etc.
         data: chartData,
         options: {
+            plugins: {
+              annotation: {
+                annotations: annotations,
+              },
+            },
             interaction: {
                 intersect: false,
                 mode: 'index',
@@ -73,6 +95,7 @@ $(document).ready(function() {
         }
     });
 
-    table.hide();
+    $(".chart-data").hide();
+    $(".chart-view").show();
     $("#weight-chart").show();
 });
