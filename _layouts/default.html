@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Chaluha z Apatyky, štěňata malého knírače v barvě pepř a sůl (Zwergschnauzer Pfeffersalz). Rodokmen a novinky z vrhu. Máte zájem o štěně? Napište nebo zavolejte." />
+        <meta name="keywords" content="štěně, štěňata, malý knírač, pepř a sůl, Zwergschnauzer Pfeffersalz, prodej" />
+        <meta name="author" content="Martin Sivák" />
+        <title>Chaluha z Apatyky - štěňata - malý knírač pepř a sůl</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Chaluha z Apatyky</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    {{ page.nav-menu }}
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-2 rounded" href="#news">{{ page.nav-news }}</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-2 rounded" href="#pedigree">{{ page.nav-pedigree }}</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-2 rounded" href="#about">{{ page.nav-about }}</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-2 rounded" href="#puppies">{{ page.nav-puppies }}</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-2 rounded" href="#want">{{ page.nav-want }}</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-2 rounded" href="#contact">{{ page.nav-contact }}</a></li>
+                        
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-1 px-0 px-lg-1" href="index.html">🇨🇿</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-1 px-0 px-lg-1" href="en.html">🇬🇧</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/maja-sedici.gif" alt="Chaluha z Apatyky na vycházce" />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Chaluha z Apatyky - {{ page.nav-puppies }}</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">{{ page.subtitle }}</p>
+            </div>
+        </header>
+        <section class="page-section portfolio" id="pedigree">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{ page.parents |capitalize}}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto">
+                            <a href="https://www.kchk.cz/detail-psa/4360" title="Chaluha z Apatyky - {{ page.kchk }}"><div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                <img src="assets/img/kchk-logo.png"/><br/>⇨ {{ page.kchk }}
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/maja.jpg" alt="Chaluha z Apatyky" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto">
+                            <a href="https://www.kchk.cz/detail-psa/3721" title="Percy Pepper Androis - {{ page.kchk }}">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                <img src="assets/img/kchk-logo.png"/><br/>⇨ {{ page.kchk }}
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/percy-pepper-androis.jpg" alt="Percy Pepper Androis" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">{{ page.nav-about }}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                {% include {{ page.include-about }} %}
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-light btn-outline-light" href="https://www.zapatyky.cz/kontakt.html">
+                        <img src="assets/img/z-apatyky.png" width="300px" title="chovatelská stanice Z Apatyky" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-section portfolio" id="puppies">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{ page.nav-puppies }}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-clock"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    {% include {{ page.include-puppies }} %}
+                </div> 
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-3 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-paw fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/holka-cervena-14d.jpg" alt="Jahoda" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-paw fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/kluk-zelena-14d.jpg" alt="Jitrocel" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-paw fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/kluk-modra-14d.jpg" alt="Jarisch" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-paw fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/kluk-zluta-14d.jpg" alt="Jód" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Portfolio Grid Items-->
+            <div class="chart-data container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{ page.growing }}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-clock"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="chart-data row justify-content-center">
+                    <table class="" id="weight">
+                    <thead>
+                    <tr>
+                        <th>{{ page.puppy }}</th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                        <th>9</th>
+                        <th>10</th>
+                        <th>11</th>
+                        <th>12</th>
+                        <th>13</th>
+                        <th>14</th>
+                        <th>15</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr data-color="#ff1010">
+                        <td>Jahoda</td>
+                        <td>212</td>
+                        <td>230</td>
+                        <td>270</td>
+                        <td>301</td>
+                        <td>350</td>
+                        <td>388</td>
+                        <td>422</td>
+                        <td>487</td>
+                        <td>529</td>
+                        <td>585</td>
+                        <td>610</td>
+                        <td>652</td>
+                        <td>706</td>
+                        <td>772</td>
+                        <td>805</td>
+                        <td>871</td>
+                    </tr>
+                    <tr data-color="#00b312">
+                        <td>Jitrocel</td>
+                        <td>194</td>
+                        <td>198</td>
+                        <td>227</td>
+                        <td>264</td>
+                        <td>320</td>
+                        <td>344</td>
+                        <td>408</td>
+                        <td>443</td>
+                        <td>509</td>
+                        <td>528</td>
+                        <td>560</td>
+                        <td>610</td>
+                        <td>662</td>
+                        <td>720</td>
+                        <td>780</td>
+                        <td>800</td>
+                    </tr>
+                    <tr data-color="#10f7ff">
+                        <td>Jarisch</td>
+                        <td>234</td>
+                        <td>256</td>
+                        <td>295</td>
+                        <td>352</td>
+                        <td>374</td>
+                        <td>420</td>
+                        <td>462</td>
+                        <td>503</td>
+                        <td>576</td>
+                        <td>604</td>
+                        <td>660</td>
+                        <td>681</td>
+                        <td>789</td>
+                        <td>818</td>
+                        <td>843</td>
+                        <td>891</td>
+                    </tr>
+                    <tr data-color="#ff9810">
+                        <td>Jód</td>
+                        <td>216</td>
+                        <td>241</td>
+                        <td>284</td>
+                        <td>327</td>
+                        <td>363</td>
+                        <td>408</td>
+                        <td>466</td>
+                        <td>508</td>
+                        <td>560</td>
+                        <td>603</td>
+                        <td>655</td>
+                        <td>706</td>
+                        <td>792</td>
+                        <td>828</td>
+                        <td>859</td>
+                        <td>927</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                </div>
+            </div>
+                <!-- Portfolio Grid Items-->
+            <div class="chart-data container justify-content-center">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{ page.events }}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-clock"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="chart-data row justify-content-center">
+                    <table id="events" class="">
+                    <tr>
+                        <td>12</td>
+                        <td>{{ page.opened-eyes }}</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>{{ page.deworm }}</td>
+                    </tr>
+                    </table>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                </div>
+            </div>
+                <!-- Portfolio Grid Items-->
+            <div class="chart-view container">
+                <canvas style="height: 3cm; display: none;" id="weight-chart"></canvas>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="want">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">{{ page.nav-want }}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-8 ms-auto me-auto text-center">
+                        <p class="lead">{{ page.pickup }}</p>
+                        <p class="lead">{{ page.includes }}</p>
+                    </div>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 me-auto ms-auto text-center">
+                        <p class="text-large">{{ page.price-for-puppy }}<br/><i class="fa-solid fa-mars-and-venus"></i> {{ page.price }}.</p>
+                    </div>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                </div>
+                <div class="row text-center">
+                    <p class="text-large">{{ page.write-or-call }}:</p>
+                    <div class="col-lg-4 ms-auto text-end">
+                    <p class="text-large"><i class="fas fa-envelope fa-2x"></i> <a href="mailto:alca@chaluha.cz">alca@chaluha.cz</a></p>
+                    </div>
+                    <div class="col-lg-4 me-auto text-start">
+                    <p class="text-large"><i class="fas fa-phone fa-2x"></i>+420 737 482 392</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section-->
+        <section class="page-section mb-0" id="news">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase">{{ page.nav-news }}</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <a class="mastodon-feed" href="https://witter.cz/@chaluha" data-exclude-replies=true data-exclude-reblogs=false data-toot-limit="12">Sleduj mě na <i class="fas fa-mastodon"></i> chaluha@witter.cz!</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer text-center" id="contact">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">{{ page.address }}</h4>
+                        <p class="lead mb-0">
+                            Alena Siváková
+                            <br />
+                            Rumiště 8
+                            <br />
+                            Brno, 602 00
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">{{ page.socials }}</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://witter.cz/@chaluha"><i class="fab fa-fw fa-mastodon"></i></a>
+                        <!-- <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a> -->
+                        <!-- <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a> -->
+                        <!-- <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a> -->
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">{{ page.nav-contact }}</h4>
+                        <p class="lead mb-0">
+                            tel: 737 482 392 <br/>
+                            email: <a href="mailto:alca@chaluha.cz">alca@chaluha.cz</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>{{ page.copyright }} &copy; chaluha.cz 2025</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jahoda z Apatyky</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/holka-cervena.jpg" alt="..." />
+                                    <p class="mb-4">Narodila jsem se jako druhá a vážila jsem 212 gramů.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/holka-cervena-7d.jpg" alt="..." />
+                                    <p class="mb-4">Pěkně rostu, po týdnu už mám 487 gramů.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/holka-cervena-14d.jpg" alt="..." />
+                                    <p class="mb-4">Už koukám na svět.</p>
+                                    <!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        {{ page.close }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jitrocel z Apatyky</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kluk-zelena.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Narodil jsem se jako třetí a vážil jsem 194 gramů.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kluk-zelena-7d.jpg" alt="..." />
+                                    <p class="mb-4">Pěkně rostu, po týdnu už mám 443 gramů.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kluk-zelena-14d.jpg" alt="..." />
+                                    <p class="mb-4">Už koukám na svět.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        {{ page.close }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jarisch z Apatyky</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kluk-modra.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Narodil jsem se jako první a vážil jsem 234 gramů.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kluk-modra-7d.jpg" alt="..." />
+                                    <p class="mb-4">Pěkně rostu, po týdnu už mám 503 gramů.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kluk-modra-14d.jpg" alt="..." />
+                                    <p class="mb-4">Už koukám na svět.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        {{ page.close }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Jód z Apatyky</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kluk-zluta.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Narodil jsem se jako čtvrtý a vážil jsem 216 gramů.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kluk-zluta-7d.jpg" alt="..." />
+                                    <p class="mb-4">Pěkně rostu, po týdnu už mám 508 gramů.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kluk-zluta-14d.jpg" alt="..." />
+                                    <p class="mb-4">Už koukám na svět.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        {{ page.close }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- emfed mastodon -->
+        <script type="module" src="https://esm.sh/emfed@1"></script>
+        <!-- chart.js -->
+        <script src="js/chart.umd.min.js"></script>
+        <script src="js/chartjs-plugin-annotation.min.js"></script>
+        <script src="js/jquery-3.7.1.slim.min.js"></script>
+        <script src="js/weight-chart.js"></script>
+    </body>
+</html>
