@@ -11084,7 +11084,7 @@ html {
   display: block;
 }
 
-.toot img {
+.toot img, .toot video {
   max-width: 90%;
   max-height: 8em;
 }
