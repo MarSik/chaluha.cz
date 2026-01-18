@@ -10985,6 +10985,7 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
+  max-width: 90%;
   width: 30rem;
 }
 
@@ -11069,6 +11070,7 @@ html {
 .toot {
   list-style-type: none;
   font-size: larger;
+  margin-top: 1em;
 }
 
 .toot .user, .toot .permalink {
