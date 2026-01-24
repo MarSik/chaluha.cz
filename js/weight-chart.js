@@ -13,6 +13,7 @@ $(document).ready(function() {
   events.find('tr').each(function () {
       const $cells = $(this).find('td');
       const $day = $cells.first().text().trim();
+      const $position = $(this).attr("data-position");
 
       annotations["day" + $day] = {
           type: 'line',
@@ -22,7 +23,7 @@ $(document).ready(function() {
           value: $day,
           label: {
             // rotation: 'auto',
-            position: 'end',
+            position: $position || "end",
             backgroundColor: 'black',
             content: $cells.slice(1).first().text().trim(),
             display: true
